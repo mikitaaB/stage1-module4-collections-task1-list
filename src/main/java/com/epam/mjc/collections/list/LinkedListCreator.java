@@ -1,12 +1,11 @@
 package com.epam.mjc.collections.list;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
 public class LinkedListCreator {
     public LinkedList<Integer> createLinkedList(List<Integer> sourceList) {
-        LinkedList<String> res = ArrayList<>();
+        LinkedList<String> res = new LinkedList<>();
         for (int i = 0; i < sourceList.size(); i++) {
             int listEl = sourceList.get(i);
             if (listEl % 2 == 0) {
