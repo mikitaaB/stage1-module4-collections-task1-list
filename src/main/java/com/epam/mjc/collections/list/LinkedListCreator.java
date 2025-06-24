@@ -6,12 +6,11 @@ import java.util.List;
 public class LinkedListCreator {
     public LinkedList<Integer> createLinkedList(List<Integer> sourceList) {
         LinkedList<Integer> res = new LinkedList<>();
-        for (int i = 0; i < sourceList.size(); i++) {
-            int listEl = sourceList.get(i);
+        for (Integer listEl : sourceList) {
             if (listEl % 2 == 0) {
-                sourceList.add(0, listEl);
+                res.addFirst(listEl);
             } else {
-                sourceList.add(listEl);
+                res.addLast(listEl);
             }
         }
         return res;
