@@ -26,7 +26,7 @@ class ListComparator implements Comparator<String> {
         return result;
     }
 
-    private double getFuncRes(int x) {
-        return 5 * Math.pow(x, 2) + 3;
+    private int getFuncRes(int x) {
+        return 5 * x * x + 3;
     }
 }

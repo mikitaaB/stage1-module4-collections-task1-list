@@ -5,7 +5,7 @@ import java.util.List;
 
 public class LinkedListCreator {
     public LinkedList<Integer> createLinkedList(List<Integer> sourceList) {
-        LinkedList<String> res = new LinkedList<>();
+        LinkedList<Integer> res = new LinkedList<>();
         for (int i = 0; i < sourceList.size(); i++) {
             int listEl = sourceList.get(i);
             if (listEl % 2 == 0) {
