@@ -8,9 +8,9 @@ public class LinkedListCreator {
         LinkedList<Integer> res = new LinkedList<>();
         for (Integer listEl : sourceList) {
             if (listEl % 2 == 0) {
-                res.addFirst(listEl);
-            } else {
                 res.addLast(listEl);
+            } else {
+                res.addFirst(listEl);
             }
         }
         return res;
